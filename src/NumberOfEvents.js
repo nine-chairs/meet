@@ -12,12 +12,6 @@ class NumberOfEvents extends Component {
     };
   }
 
-  /*updateNumberOfEvents = (event) => {
-    this.setState({
-      numberOfEvents: event.target.value,
-    });
-    this.props.updateEventNumbers(event.target.value);
-  };*/
 
   updateNumberOfEvents = (event) => {
     const value = event.target.value;
