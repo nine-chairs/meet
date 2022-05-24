@@ -128,7 +128,8 @@ class App extends Component {
     const { locations, events } = this.state;
     const data = locations.map((location) => {
       const number = events.filter((event) => event.location === location).length
-      const city = location.split(', ').shift()
+      let city = location.split(', ').shift()
+      city = city.split('- ').shift()
       return { city, number };
     })
     return data;
